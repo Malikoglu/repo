@@ -43,7 +43,8 @@ services:
     volumes:
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/www:/var/www/certbot
-    command: certonly --webroot --webroot-path=/var/www/certbot --email malikoglu.omer@std.izu.edu.tr --agree-tos --no-eff-email -d example.com -d www.example.com
+    command: certonly --webroot --webroot-path=/var/www/certbot --email malikoglu.omer@std.izu.edu.tr --agree-tos --no-eff-email -d 
+20.251.12.34 -d 20.251.12.34
 
 volumes:
   wordpress:
